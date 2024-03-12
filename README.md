@@ -1,25 +1,26 @@
-1. **Data Collection:**
-   - Imports necessary libraries such as openpyxl, pandas, praw (Python Reddit API Wrapper), and scikit-learn.
-   - Downloads NLTK (Natural Language Toolkit) resources required for text preprocessing.
-   - Loads an Excel workbook from a specified path.
-   - Initializes the Reddit API with user-specific credentials (client ID, client secret, and user agent).
-   - Retrieves existing data (titles) from the Excel file.
+# Project1
 
-2. **Data Retrieval from Reddit:**
-   - Retrieves new posts from the "randomscreenshot" subreddit on Reddit.
-   - Checks if the post title already exists in the Excel file to avoid duplicates.
-   - Appends new post data (title, score, comments, awards, URL, and link flair) to the Excel file.
+The project uses Python libraries and APIs to analyze Reddit data, predict user input, and suggest new titles based on cosine similarity. It retrieves new posts from a subreddit, checks for duplicates, and adds unique posts. The script then predicts scores, comments, and awards using a Naive Bayes classifier, and outputs the best suggestion with its combined score.
 
-3. **User Input and Prediction:**
-   - Takes user input for a title to be predicted.
-   - Utilizes machine learning techniques (Multinomial Naive Bayes) to predict scores, comments, and awards based on the input title.
-   - Presents the predicted title data (score, comments, awards) to the user.
+## Table of Contents
 
-4. **Title Suggestion:**
-   - Preprocesses both the Reddit post titles and the user's input title by tokenizing, lowering case, and removing stopwords.
-   - Computes TF-IDF (Term Frequency-Inverse Document Frequency) vectors for titles.
-   - Calculates cosine similarities between the input title and all titles in the dataset.
-   - Combines the cosine similarity scores with the existing scores to find the best title suggestion.
-   - Presents the input title, the best title suggestion, and the maximum combined score to the user.
+- [About](#about)
+- [Features](#features)
+- [Imports](#Imports)
+- [Rating: 7/10](#Rating)
 
-This script demonstrates a practical application of data collection, text analysis, and machine learning for predicting and suggesting titles based on Reddit data and user input.
+# About
+
+The project uses Python libraries and APIs to analyze data from the Reddit platform, predict user input, and suggest new titles based on cosine similarity. The script loads an Excel file with existing data and accesses the Reddit API to retrieve new posts from a specific subreddit. It checks for duplicate titles and adds unique posts to the file. The script then predicts the score, comments, and awards using a Naive Bayes classifier trained on the existing data. The script then suggests a new title based on the combined score of each suggestion.
+
+# Features
+
+The project uses Python libraries and APIs to analyze Reddit data and suggest titles. It retrieves data from a specific subreddit and loads existing data from an Excel file. The script checks for duplicate titles and adds unique posts to avoid redundancy. A Naive Bayes classifier is trained on the existing data to predict attributes like score, comments, and awards for new posts. The script suggests new titles based on cosine similarity, which compares new post titles with existing ones. The suggested title is based on the combined score of each suggestion, which may include factors like upvotes, comments, and awards. This project demonstrates how Python can be used to analyze Reddit data and provide intelligent title suggestions based on existing patterns.
+
+# Imports
+
+openpyxl, pandas, praw, sklearn.model_selection, sklearn.feature_extraction.text, sklearn.naive_bayes, nltk, sklearn.feature_extraction.text, nltk.tokenize, nltk.corpus, sklearn.metrics.pairwise
+
+# Rating
+
+The project effectively uses APIs, data processing, and machine learning techniques for predictive analysis on Reddit. It gathers data, performs predictions, and suggests titles based on similarity metrics. However, improvements in code organization, documentation, and user interface are needed. Refinement of prediction models and suggestion algorithms could enhance accuracy and relevance. Overall, a solid project with potential for expansion and enhancement.
