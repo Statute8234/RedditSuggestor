@@ -7,7 +7,7 @@ The project uses Python libraries and APIs to analyze Reddit data, predict user 
 - [About](#about)
 - [Features](#features)
 - [Imports](#Imports)
-- [Rating: 7/10](#Rating)
+- [Rating: 6/10](#Rating)
 
 # About
 
@@ -23,4 +23,6 @@ openpyxl, pandas, praw, sklearn.model_selection, sklearn.feature_extraction.text
 
 # Rating
 
-The project effectively uses APIs, data processing, and machine learning techniques for predictive analysis on Reddit. It gathers data, performs predictions, and suggests titles based on similarity metrics. However, improvements in code organization, documentation, and user interface are needed. Refinement of prediction models and suggestion algorithms could enhance accuracy and relevance. Overall, a solid project with potential for expansion and enhancement.
+The code is functional and incorporates features such as fetching data from Reddit, performing predictions, and suggesting titles. It has a 6/10 overall rating. The code achieves its intended purpose of fetching data, performing predictions, and suggesting titles. The tkinter interface provides a user-friendly way to interact with the program. The code effectively uses threading to prevent the GUI from freezing during long-running tasks. The code handles exceptions gracefully.
+However, there are some cons, such as code duplication, complexity, variable naming, GUI layout, magic numbers, and hardcoded values. To reduce these issues, the code could be refactored into a single function, simplified title suggestion logic, improved variable naming, and improved GUI layout. Additionally, the code should use named constants instead of magic numbers to improve code readability and maintainability.
+To improve the code, the code should be externalized configurations, store paths, API credentials, and other configurations outside the code, and add more comments explaining the purpose and logic of complex operations. This will make it easier for others to understand the code and improve its overall functionality.
