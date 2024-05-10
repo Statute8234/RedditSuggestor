@@ -16,9 +16,9 @@ df = pd.read_excel(PATH)
 
 # reddit
 reddit = praw.Reddit(
-    client_id="nY4WstIZvogjrDxmIWyKPw",
-    client_secret="jKZGZhgITUi8rd_xgMtlkscMx62JoA",
-    user_agent="test-script",
+    client_id="***",
+    client_secret="***",
+    user_agent="***",
 )
 
 # loading bar
@@ -33,7 +33,7 @@ def stop_loading():
     
 
 def collect_data_to_excel(PATH):
-    subreddit_name = "randomscreenshot"
+    subreddit_name = "****"
     current_row = 2
     subreddit = reddit.subreddit(subreddit_name)
     num_posts = subreddit.subscribers
