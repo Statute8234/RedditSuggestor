@@ -17,9 +17,9 @@ path = r"C:\Users\danie\OneDrive\Desktop\Data.xlsx"
 workbook = openpyxl.load_workbook(path)
 
 reddit = praw.Reddit(
-    client_id="nY4WstIZvogjrDxmIWyKPw",
-    client_secret="jKZGZhgITUi8rd_xgMtlkscMx62JoA",
-    user_agent="test-script",
+    client_id="***",
+    client_secret="***",
+    user_agent="***",
 )
 worksheet = workbook['Sheet1']
 
