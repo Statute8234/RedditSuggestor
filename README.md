@@ -1,5 +1,19 @@
 # RedditSuggestor
 
+[![Static Badge](https://img.shields.io/badge/tkinter-brightgreen)](https://docs.python.org/3/library/tkinter.html)
+[![Static Badge](https://img.shields.io/badge/filedialog-yellow)](https://docs.python.org/3/library/tkinter.filedialog.html)
+[![Static Badge](https://img.shields.io/badge/ttk-blue)](https://docs.python.org/3/library/tkinter.ttk.html)
+[![Static Badge](https://img.shields.io/badge/threading-orange)](https://docs.python.org/3/library/threading.html)
+[![Static Badge](https://img.shields.io/badge/pandas-red)](https://pandas.pydata.org/pandas-docs/stable/)
+[![Static Badge](https://img.shields.io/badge/random-purple)](https://docs.python.org/3/library/random.html)
+[![Static Badge](https://img.shields.io/badge/difflib-pink)](https://docs.python.org/3/library/difflib.html)
+[![Static Badge](https://img.shields.io/badge/praw-teal)](https://praw.readthedocs.io/en/stable/)
+[![Static Badge](https://img.shields.io/badge/openpyxl-ivory)](https://openpyxl.readthedocs.io/en/stable/)
+[![Static Badge](https://img.shields.io/badge/scikit--learn-9cf)](https://scikit-learn.org/stable/)
+[![Static Badge](https://img.shields.io/badge/CountVectorizer-magenta)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
+[![Static Badge](https://img.shields.io/badge/MultinomialNB-lightgrey)](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
+
+
 The project uses Python libraries and APIs to analyze Reddit data, predict user input, and suggest new titles based on cosine similarity. It retrieves new posts from a subreddit, checks for duplicates, and adds unique posts. The script then predicts scores, comments, and awards using a Naive Bayes classifier, and outputs the best suggestion with its combined score.
 
 ## Table of Contents
