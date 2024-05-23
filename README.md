@@ -14,7 +14,7 @@
 [![Static Badge](https://img.shields.io/badge/MultinomialNB-lightgrey)](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
 
 
-The project uses Python libraries and APIs to analyze Reddit data, predict user input, and suggest new titles based on cosine similarity. It retrieves new posts from a subreddit, checks for duplicates, and adds unique posts. The script then predicts scores, comments, and awards using a Naive Bayes classifier, and outputs the best suggestion with its combined score.
+The project utilizes machine learning techniques and the Reddit API to predict post title success and suggest improvements through Reddit Title Wizard and Title Genius.
 
 ## Table of Contents
 
@@ -22,31 +22,82 @@ The project uses Python libraries and APIs to analyze Reddit data, predict user 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Rating: 7/10](#Rating)
+- [Contributing](#contributing)
+- [License](#license)
 
-# About
+## About
 
-The project uses Python libraries and APIs to analyze data from the Reddit platform, predict user input, and suggest new titles based on cosine similarity. The script loads an Excel file with existing data and accesses the Reddit API to retrieve new posts from a specific subreddit. It checks for duplicate titles and adds unique posts to the file. The script then predicts the score, comments, and awards using a Naive Bayes classifier trained on the existing data. The script then suggests a new title based on the combined score of each suggestion.
+The project consists of two main components: Reddit Title Wizard and Title Genius, which use machine learning techniques to predict post title success and suggest improvements, integrating with the Reddit API.
 
-# Features
+## Features
 
-The project uses Python libraries and APIs to analyze Reddit data and suggest titles. It retrieves data from a specific subreddit and loads existing data from an Excel file. The script checks for duplicate titles and adds unique posts to avoid redundancy. A Naive Bayes classifier is trained on the existing data to predict attributes like score, comments, and awards for new posts. The script suggests new titles based on cosine similarity, which compares new post titles with existing ones. The suggested title is based on the combined score of each suggestion, which may include factors like upvotes, comments, and awards. This project demonstrates how Python can be used to analyze Reddit data and provide intelligent title suggestions based on existing patterns.
+- Reddit Title Wizard: A GUI-based application that allows users to input Reddit post titles, predict their potential performance, and receive suggestions for improvement.
+- Title Genius: A command-line tool that collects Reddit post data, predicts the success of titles, and suggests improved titles based on similarity and other factors.
 
-# Installation
+Prerequisites
+- Python 3.x
+- Required Python libraries:
+- openpyxl
+- pandas
+- praw
+- scikit-learn
+- nltk
+- tkinter
+- threading
 
-1) HTTPS - https://github.com/[User]/RedditSuggestor.git
-2) CLONE - git@github.com:{User]/RedditSuggestor.git
+## Installation
 
-# Usage
+Clone the repository:
+- git clone <repository_url>
 
-This script is suitable for various GitHub scenarios, particularly for data collection, machine learning, and user interaction projects. It automates the process of collecting and updating data from Reddit, stores and manages data in an Excel file, and demonstrates the use of Naive Bayes classification for predicting outcomes based on textual data. It also provides an example of creating a GUI with Tkinter for interacting with a machine learning model and demonstrates how to integrate various functionalities into a single user interface.
+Install dependencies:
+- pip install openpyxl pandas praw scikit-learn nltk tkinter
 
-The Reddit Post Predictor project collects data from Reddit, trains a machine learning model to predict post performance, and provides a GUI for user interaction. It features a user-friendly GUI for input and prediction. To install, clone the repository, install the required dependencies, update the PATH variable in main.py to point to your Excel file, add your Reddit API credentials in main.py, and run the application.
+Set up NLTK:
+- python -m nltk.downloader stopwords punkt
 
-This project is licensed under the MIT License, providing a clear structure and usage guide for users who want to clone, modify, and use the project for their purposes.
+Set up Reddit API credentials:
+- Create a Reddit app to get client_id, client_secret, and user_agent.
+- Replace the placeholders in the code with your credentials.
 
-# Rating
+## Usage
 
-The code is functional and incorporates features such as fetching data from Reddit, performing predictions, and suggesting titles. The code achieves its intended purpose of fetching data, performing predictions, and suggesting titles. The tkinter interface provides a user-friendly way to interact with the program. The code effectively uses threading to prevent the GUI from freezing during long-running tasks. The code handles exceptions gracefully.
-However, there are some cons, such as code duplication, complexity, variable naming, GUI layout, magic numbers, and hardcoded values. To reduce these issues, the code could be refactored into a single function, simplified title suggestion logic, improved variable naming, and improved GUI layout. Additionally, the code should use named constants instead of magic numbers to improve code readability and maintainability.
-To improve the code, the code should be externalized configurations, store paths, API credentials, and other configurations outside the code, and add more comments explaining the purpose and logic of complex operations. This will make it easier for others to understand the code and improve its overall functionality.
+# Reddit Title Wizard
+- Run the application:
+  - python RedditTitleWizard.py
+  - Using the application:
+    - Enter a post title in the "Enter post title" field.
+    - Click the "Submit" button to get predictions for points, comments, and awards.
+    - View the suggested title in the "would you like to try:" field.
+    - Optionally, upload a photo using the "Upload Photo" button.
+
+# Title Genius
+- Run the script:
+  - python TitleGenius.py
+  - Follow the prompts:
+    - The script will prompt you to enter a title for prediction.
+    - It will fetch the latest data from the specified subreddit and update the Excel file.
+    - The script will then predict and display the potential success of the input title and suggest an improved title.
+
+## Contributing
+
+Contributions are welcome! To contribute to Monster Maze, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
