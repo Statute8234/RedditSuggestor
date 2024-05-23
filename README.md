@@ -48,7 +48,7 @@ Prerequisites
 ## Installation
 
 Clone the repository:
-- git clone <repository_url>
+- git clone [<repository_url>](https://github.com/Statute8234/RedditSuggestor.git)
 
 Install dependencies:
 - pip install openpyxl pandas praw scikit-learn nltk tkinter
