@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 # data
-PATH = r"C:\Users\danie\OneDrive\Desktop\Data.xlsx"
+PATH = r"Data.xlsx"
 df = pd.read_excel(PATH)
 
 # reddit
