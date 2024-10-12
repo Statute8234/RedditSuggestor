@@ -1,17 +1,18 @@
 # RedditSuggestor
 
-[![Static Badge](https://img.shields.io/badge/tkinter-brightgreen)](https://docs.python.org/3/library/tkinter.html)
-[![Static Badge](https://img.shields.io/badge/filedialog-yellow)](https://docs.python.org/3/library/tkinter.filedialog.html)
-[![Static Badge](https://img.shields.io/badge/ttk-blue)](https://docs.python.org/3/library/tkinter.ttk.html)
-[![Static Badge](https://img.shields.io/badge/threading-orange)](https://docs.python.org/3/library/threading.html)
-[![Static Badge](https://img.shields.io/badge/pandas-red)](https://pandas.pydata.org/pandas-docs/stable/)
-[![Static Badge](https://img.shields.io/badge/random-purple)](https://docs.python.org/3/library/random.html)
-[![Static Badge](https://img.shields.io/badge/difflib-pink)](https://docs.python.org/3/library/difflib.html)
-[![Static Badge](https://img.shields.io/badge/praw-teal)](https://praw.readthedocs.io/en/stable/)
-[![Static Badge](https://img.shields.io/badge/openpyxl-ivory)](https://openpyxl.readthedocs.io/en/stable/)
-[![Static Badge](https://img.shields.io/badge/scikit--learn-9cf)](https://scikit-learn.org/stable/)
-[![Static Badge](https://img.shields.io/badge/CountVectorizer-magenta)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
-[![Static Badge](https://img.shields.io/badge/MultinomialNB-lightgrey)](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
+[![Static Badge](https://img.shields.io/badge/tkinter-purple)](https://pypi.org/project/tkinter/)
+[![Static Badge](https://img.shields.io/badge/threading-gray)](https://pypi.org/project/threading/)
+[![Static Badge](https://img.shields.io/badge/pandas-blue)](https://pypi.org/project/pandas/)
+[![Static Badge](https://img.shields.io/badge/random-pink)](https://pypi.org/project/random/)
+[![Static Badge](https://img.shields.io/badge/difflib-purple)](https://pypi.org/project/difflib/)
+[![Static Badge](https://img.shields.io/badge/praw-black)](https://pypi.org/project/praw/)
+[![Static Badge](https://img.shields.io/badge/openpyxl-pink)](https://pypi.org/project/openpyxl/)
+[![Static Badge](https://img.shields.io/badge/sklearn-yellow)](https://pypi.org/project/sklearn/)
+[![Static Badge](https://img.shields.io/badge/openpyxl-yellow)](https://pypi.org/project/openpyxl/)
+[![Static Badge](https://img.shields.io/badge/pandas-pink)](https://pypi.org/project/pandas/)
+[![Static Badge](https://img.shields.io/badge/praw-purple)](https://pypi.org/project/praw/)
+[![Static Badge](https://img.shields.io/badge/nltk-blue)](https://pypi.org/project/nltk/)
+
 
 
 The project utilizes machine learning techniques and the Reddit API to predict post title success and suggest improvements through Reddit Title Wizard and Title Genius.
